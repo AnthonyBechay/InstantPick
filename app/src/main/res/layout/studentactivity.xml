@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:nestedScrollingEnabled="true"
+    android:background="#6fcdc8"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Contact registered companies : "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/redLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="35dp"
+        android:background="#f74747"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="true"
+        android:fillViewport="true">
+
+        <GridView
+            android:id="@+id/grid5"
+            android:layout_width="match_parent"
+            android:layout_height="453dp"
+            android:verticalSpacing="7dp"
+            android:background="#cac8c8"
+            android:nestedScrollingEnabled="true"
+            />
+    </ScrollView>
+
+</LinearLayout>

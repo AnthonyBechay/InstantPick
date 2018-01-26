@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6fcdc8"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Check required programming language"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="18sp" />
+
+
+            <GridView
+                android:id="@+id/gridview"
+                android:layout_width="fill_parent"
+                android:layout_height="198dp"
+                android:choiceMode="singleChoice"
+                android:headerDividersEnabled="false" />
+
+            <LinearLayout
+                android:layout_width="203dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.36">
+
+                <Button
+                    android:id="@+id/bshow"
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#B6B6B4"
+                    android:onClick="onShow"
+                    android:text="Show"
+                    android:textColor="#FFFF" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="112dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:text="TextView"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.00"
+                android:orientation="vertical">
+
+                <GridView
+                    android:id="@+id/gridview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="453dp"
+                    android:background="#cac8c8"
+                    android:verticalSpacing="7dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#51B1A8"
+    android:weightSum="1">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="362dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:hint="Email"
+            android:textColor="#FFF"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/tester"
+            android:text="Not yet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="362dp"
+            android:layout_marginLeft="5dp"
+            android:hint="Password"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="#FFF"/>
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="128dp"
+        android:layout_height="192dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.45"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:backgroundTint="#B6B6B4"
+            android:onClick="onLogin"
+            android:text="login"
+            android:textColor="#FFFF"
+            android:textSize="17dp"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
